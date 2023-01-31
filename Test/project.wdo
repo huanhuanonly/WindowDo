@@ -1,0 +1,9 @@
+.echo off
+.show on
+.ptr -p console
+.alias -win mc
+.loop*loop
+{
+	.ptr  -p  cur
+	.project  mc  0 100
+}

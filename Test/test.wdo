@@ -1,0 +1,32 @@
+--ANSI--
+
+.ECHO   ON
+.PTR    -P     CUR
+.ALIAS  -WIN   LOG
+
+.THREAD
+{
+    .RANDOMRUN*LOOP
+    {
+        .LOOP
+        {
+            .DELAY   -I     0
+            LOG.REPAINT
+            .PTR     -P     CUR
+            .ALIAS   -WIN   LOG
+            .STROKE  00FF00
+            .DELAY   -I     20
+        }
+        .LOOP
+        {
+            LOG.MOVE  { 1  1,  2  2,  3  3}
+            LOG.MOVE  {-1 -1, -2 -2, -3 -3}
+        }
+        .LOOP
+        {
+            LOG.ZOOM*10  1   1
+            LOG.ZOOM*10  -1 -1
+        }
+        // LOG.RPOS*10
+    }
+}

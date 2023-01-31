@@ -1,0 +1,11 @@
+.echo  off
+.delay 10
+.loop*loop
+{
+	ptr       -p cur
+	movey*10  1
+	movey*10  -1
+	movex*5   1
+	movex*5   -1
+}
+.exit 520

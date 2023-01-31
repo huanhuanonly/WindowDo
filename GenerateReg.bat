@@ -1,0 +1,1 @@
+@%CD%\wdo.exe -GenerateReg
